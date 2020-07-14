@@ -1,5 +1,3 @@
-
-
 def solution(answers):
     answer = []
     len_answer = len(answer)
