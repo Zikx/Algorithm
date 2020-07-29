@@ -1,6 +1,4 @@
-# 1번 1,2,3,4,5 ... (5개)
-# 2번 2,1,2,3,2,4,2,5 ....(8개)
-# 3번 3,3,1,1,2,2,4,4,5,5 .. (10개)
+# 더러운코드
 
 def solution(answers):
     re_answer = list()
@@ -23,9 +21,11 @@ def solution(answers):
     for i in range(len(answer)):
         if max_answers == answer[i]:
             re_answer.append(i+1)
-
+    
     re_answer.sort()
     return re_answer
+
+# 
 
 answers1 = [1,2,3,4,5] # 1
 answers2 = [1,3,2,4,2] # 1,2,3

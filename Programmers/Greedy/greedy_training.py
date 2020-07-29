@@ -3,11 +3,12 @@
 
 def solution(n, lost, reserve):
     answer = 0
-    # have = [1] * n
     # set = 중복을 허용하지 않는 자료형
     # list 와 비교했을 때 연산이 가능
     set_reserve = set(reserve) - set(lost)
     set_lost = set(lost) - set(reserve)
+    print(f'set_reserve : {set_reserve}')
+    
     for i in set_reserve:
         if i - 1 in set_lost:
             set_lost.remove(i-1)

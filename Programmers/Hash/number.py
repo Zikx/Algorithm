@@ -9,5 +9,4 @@ def solution(phoneBook):
 phone1 = ['119', '97674223', '1195524421'] # False
 phone2 = ['123','456','789'] # True
 
-
 print(solution(phone2))

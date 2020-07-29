@@ -11,8 +11,7 @@ def solution(clothes):
 
 clothes1 = [["yellow_hat", "headgear"], 
             ["blue_sunglasses", "eyewear"],
-            ["green_turban", "headgear"],
-            ]
+            ["green_turban", "headgear"]]
 
 clothes2 = [["crow_mask", "face"], 
             ["blue_sunglasses", "face"], 
@@ -21,3 +20,11 @@ clothes2 = [["crow_mask", "face"],
 
 # print(solution(clothes1)) # return 5
 print(solution(clothes2)) # return 3
+
+
+
+
+
+
+
+
