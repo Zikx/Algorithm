@@ -1,6 +1,7 @@
 N, M, V = map(int, input().split())
 
 graph_list = [set([]) for _ in range(N+1)]
+
 for _ in range(M):
     i, j = map(int, input().split())
     graph_list[i].add(j)
@@ -12,7 +13,7 @@ def dfs(graph_list, start):
     
     while stack:
         node = stack.pop()
-        if node not in visited:
+        if node not in visited: 
             visited.append(node)
             stack += sorted(list(graph_list[node] - set(visited)), reverse = True)
     return visited
@@ -32,6 +33,5 @@ def bfs(graph_list, start):
 
 for i in list(dfs(graph_list, V)):
     print(i, end=" ")
-print()
 for j in list(bfs(graph_list, V)):
     print(j, end= " ")
